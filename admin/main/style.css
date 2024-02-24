@@ -1,0 +1,822 @@
+
+:root {
+    /*--color-default: #302f2d;*/
+    --color-primary: #ffb03b;
+  }
+  
+  /* Smooth scroll behavior */
+  :root {
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    --font-default: "Poppins-Regular", sans-serif;
+    --font-primary: "ComicNeue", cursive;
+    
+  }
+
+body {
+    font-family: "Poppins";
+    background-color: whitesmoke;
+    color: white;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffb03b;
+  }
+  
+  a:hover {
+    color: #ffc56e;
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-primary);
+  }
+
+
+/* About */
+.about h1{
+  color: var(--color-primary);
+}
+
+
+  /*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Navbar */
+.nav-link {
+
+    color: #ffb03b;
+    font-size: 17px;
+    font-weight:600;
+  }
+  .nav-link:hover {
+    color: white;
+  }
+  .navbar-brand img {
+    width: 190px;
+    height: 60px;
+
+  }
+  .navbar-brand:hover {
+    color: var(--color-primary);
+  }
+
+  .call {
+    color: white;
+  }
+.number{
+  color: var(--color-primary);
+}
+
+
+  /*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(39, 37, 34, 0.8);
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  #hero .carousel-item {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  #hero .carousel-item::before {
+    content: "";
+    background-color: rgba(12, 11, 10, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  
+  #hero .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #hero .carousel-content {
+    text-align: center;
+  }
+  
+  #hero h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  #hero h2 span {
+    color: #ffb03b;
+  }
+  
+  #hero p {
+    width: 80%;
+    animation-delay: 0.4s;
+    margin: 0 auto 30px auto;
+    color: #fff;
+  }
+  
+  #hero .carousel-inner .carousel-item {
+    transition-property: opacity;
+    background-position: center top;
+  }
+
+  #hero .carousel-indicators li {
+    cursor: pointer;
+    list-style-type: none;
+  }
+  
+  
+  @media (max-width: 768px) {
+    #hero h2 {
+      font-size: 28px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    #hero p {
+      width: 50%;
+    }
+  
+    #hero .carousel-control-prev,
+    #hero .carousel-control-next {
+      width: 5%;
+    }
+  }
+
+  /*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+  }
+  
+  .section-bg {
+    background-color: var(--color-default);
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    margin: 15px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .section-title h2 span {
+    color: #ffb03b;
+  }
+  
+  .section-title p {
+    margin: 15px auto 0 auto;
+    font-weight: 300;
+  }
+  
+  @media (min-width: 1024px) {
+    .section-title p {
+      width: 50%;
+    }
+  }
+
+  /*--------------------------------------------------------------
+# Whu Us
+--------------------------------------------------------------*/
+.why-us .box {
+    background-color: white;
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+  }
+  
+  .why-us .box span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+  
+  .why-us .box h4 {
+    font-size: 24px;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    padding: 0;
+    margin: 10px 0;
+    color: #6c665c;
+  }
+  
+  .why-us .box p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .why-us .box:hover {
+    background: #ffb03b;
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  }
+  
+  .why-us .box:hover span,
+  .why-us .box:hover h4,
+  .why-us .box:hover p {
+    color: #fff;
+  }
+
+/* 
+---------------------------------------------
+footer
+--------------------------------------------- 
+*/
+
+#footer {
+  margin-top: 50px;
+  padding: 30px 0px;
+  background-color: var(--color-primary);
+}
+
+#footer .left-text-content p {
+  margin-top: 10px;
+  color: var(--color-default);
+  text-align: right;
+}
+
+#footer .right-text-content {
+  text-align: left;
+  margin-top: 10px;
+}
+
+#footer .brand img  {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 190px;
+  height: 60px;
+
+}
+
+#footer .right-text-content ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+#footer .right-text-content ul li:first-child {
+  margin-left: 0px;
+}
+
+#footer img{
+  width: 20px;
+  height: 20px;
+}
+
+#footer .logo img{
+  width: 200px;
+  height: 88px;
+}
+
+#footer .right-text-content ul li  {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 44px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+#footer .right-text-content ul li:hover {
+  background-color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Chefs
+--------------------------------------------------------------*/
+
+.chefs .container {
+  position: relative;
+  z-index: 10;
+}
+
+.chefs .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.chefs .member .pic {
+  overflow: hidden;
+}
+
+.chefs .member .member-info {
+  position: absolute;
+  bottom: -80px;
+  left: 20px;
+  right: 20px;
+  background: #fff;
+  padding: 20px 0;
+  color: #433f39;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.chefs .member h4 {
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #6c665c;
+  position: relative;
+  padding-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+.chefs .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.chefs .member .social {
+  margin-top: 15px;
+}
+
+.chefs .member .social a {
+  transition: color 0.3s;
+  color: #7a7368;
+}
+
+
+@media (max-width: 992px) {
+  .chefs .member {
+    margin-bottom: 110px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .chefs {
+    background-attachment: fixed;
+  }
+}
+  
+
+/* -----------------------------------------------------------------------------
+
+Menu
+
+----------------------------------------------------------------------------- */
+
+.single-product-item {
+  margin-bottom: 30px;
+}
+
+.product-image {
+  padding: 30px;
+  padding-bottom: 0;
+}
+.food-image {
+  padding: 30px;
+  padding-bottom: 0;
+}
+
+
+.product-image img {
+  width: 250px;
+  height: 270px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.food-image img {
+  width: 220px;
+  height: 220px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+
+.single-product-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+p.product-price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+p.product-price span {
+  display: block;
+  opacity: 0.8;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+
+.single-product-item {
+  background-color: #1d1d1d;
+  box-shadow:0 0 15px #1f1f1f;
+  padding-bottom: 50px;
+  border-radius: 5px;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact{
+  background-color: var(--color-default);
+}
+.contact .info-wrap {
+  background-color: white;
+  box-shadow: 0px 2px 15px rgba(236, 236, 236, 0.1);
+  padding: 30px;
+}
+
+.contact .info img {
+  float: left;
+  width: 44px;
+  height: 44px;
+  display: flex;
+ 
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #433f39;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #7a7368;
+}
+
+.contact .form {
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  padding: 30px;
+  background: #fff;
+}
+
+.contact .form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .form input,
+.contact .form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .form input {
+  height: 44px;
+}
+
+.contact .form textarea {
+  padding: 10px 12px;
+}
+
+.contact .form button[type=submit] {
+  background: #ffb03b;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .form button[type=submit]:hover {
+  background: #e08700;
+}
+
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery {
+  padding-bottom: 0;
+  margin: 20px 20px;
+}
+
+.gallery .gallery-item {
+  overflow: hidden;
+  border-right: 3px solid var(--color-default);
+  border-bottom: 3px solid var(--color-default);
+}
+
+.gallery .gallery-item img {
+  transition: all ease-in-out 0.3s;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.2);
+}
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+
+.testi .testi-member {
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0 30px rgba(55, 55, 63, 0.08);
+  transition: 0.3s;
+}
+
+.testi .chef-member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.testi .testi-member .member-img:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  z-index: 1;
+}
+
+.testi .testi-member .member-info {
+  padding: 10px 15px 20px 15px;
+}
+
+.testi .testi-member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: var(--color-default);
+}
+
+.testi .testi-member .member-info span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(33, 37, 41, 0.4);
+}
+
+.testi .testi-member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  padding-top: 15px;
+  line-height: 26px;
+  color: rgba(33, 37, 41, 0.7);
+}
+
+.testi .testi-member:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 0 30px rgba(55, 55, 63, 0.15);
+}
+
+/*--------------------------------------------------------------
+# Specials
+--------------------------------------------------------------*/
+.specials {
+  overflow: hidden;
+}
+
+.specials .nav-tabs {
+  border: 0;
+}
+
+.specials .nav-link {
+  border: 0;
+  padding: 12px 15px 12px 0;
+  transition: 0.3s;
+  color: white;
+  border-radius: 0;
+  border-right: 4px solid #f8f8f8;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.specials .nav-link:hover {
+  color: #ffb03b;
+}
+
+.specials .nav-link.active {
+  color: var(--color-default);
+  border-color: #ffb03b;
+}
+
+.specials .tab-pane.active {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.specials .details h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.specials .details p {
+  color: #bdbdbd;
+}
+
+.specials .details p:last-child {
+  margin-bottom: 0;
+}
+
+  .specials .nav-link.active {
+    color: var(--color-primary);
+    background: var(--color-default);
+  }
+
+
+.tab-pane.active:hover{
+  background-color: var(--color-default);
+}
+
+/* btn */
+
+
+.btn:hover {
+  color: white;
+  background-color:#f8f7f5;
+}
+
+/* 
+---------------------------------------------
+reservation
+--------------------------------------------- 
+*/
+#reservation .section-heading {
+  margin-bottom: 30px;
+}
+
+#reservation .section-heading h6 {
+  color: #fff;
+}
+
+#reservation .section-heading h2 {
+  color: #fff;
+  font-weight: 700;
+}
+
+#reservation .section-heading h6:before {
+  background-color: #fff;
+}
+
+#reservation p {
+  color: #fff;
+  margin-bottom: 65px;
+}
+
+#reservation {
+  padding: 120px 0;
+  background-image: url(../assets/about.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 120px 50px 50px;
+}
+
+#reservation .phone,
+#reservation .message {
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+}
+
+#reservation .phone img,
+#reservation .message img {
+
+width: 25px;
+height: 25px;
+margin-top: 15px;
+
+}
+
+#reservation .phone h4,
+#reservation .message h4 {
+  color: var(--color-default);
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#reservation .phone span a,
+#reservation .message span a {
+  font-size: 14px;
+  color: #2a2a2a;
+  transition: all .3s;
+}
+
+#reservation .phone span a:hover,
+#reservation .message span a:hover {
+  color:#ffb03b;
+}
+
+#form-contact {
+  margin-left: 30px;
+  padding: 45px 30px;
+  background-color: var(--color-default);
+  border-radius: 5px;
+}
+
+#form-contact  h4 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--color-primary);
+  margin-bottom: 30px;
+}
+
+
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  color: #2a2a2a;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  width: 100%;
+  height: 46px;
+  border-radius: 5px;
+  outline: none;
+  padding-top: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-bottom: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: var(--color-primary);
+}
+
+.contact-form button {
+  margin-top: -10px;
+  font-size: 13px;
+  color: #fff;
+  background-color: #f1f0ef;
+  padding: 12px 25px;
+  width: 100%;
+  box-shadow: none;
+  border: none;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.contact-form button:hover {
+  opacity: .9;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+  padding: 20px;
+}
+
